@@ -14,7 +14,7 @@
 - Logo churn (0–3 mo): **4.00%** | (4+ mo): **2.00%**
 - Seat expansion (0–3 mo): **1.00%** | (4+ mo): **1.50%**
 - Credit expansion multiplier vs seats: **1.30x**
-- Blended NRR (monthly avg): **108.54%** | Blended GRR (monthly avg): **94.07%**
+- Blended NRR (monthly avg): **96.67%** | Blended GRR (monthly avg): **82.35%**
 - Seats/customer: **4.00** @ **$99/seat/mo**
 - Credits/customer/mo: **2,500** @ **$12.00 per 1k**
 
