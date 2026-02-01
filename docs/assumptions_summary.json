@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-01T02:28:20.449684Z",
+  "generated_at": "2026-02-01T23:35:20.497247Z",
   "horizon": {
     "start_month": "2026-01",
     "end_month": "2028-12"
@@ -10,7 +10,7 @@
     "starting_arr_usd": 2400000
   },
   "growth": {
-    "new_customers_per_month": 45,
+    "new_customers_per_month": 55,
     "logo_churn_rate_monthly_0_3": 0.04,
     "logo_churn_rate_monthly_4_plus": 0.02,
     "seat_expansion_rate_monthly_0_3": 0.01,

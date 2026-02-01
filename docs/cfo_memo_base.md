@@ -3,14 +3,14 @@
 **Period:** 2026-01 → 2028-12 (monthly)
 
 ## Executive summary
-- Ending customers: **1,054**
-- Ending MRR: **$571,382** (Ending ARR: **$6,856,583**)
-- Total revenue (period): **$10,921,865**
+- Ending customers: **1,289**
+- Ending MRR: **$698,356** (Ending ARR: **$8,380,268**)
+- Total revenue (period): **$13,348,946**
 - Gross margin (avg): **77.1%**
 - Revenue mix (avg): Seats **92.6%** | Credits **7.4%**
 
 ## Key drivers (assumptions)
-- New customers / month: **45.0**
+- New customers / month: **55.0**
 - Logo churn (0–3 mo): **4.00%** | (4+ mo): **2.00%**
 - Seat expansion (0–3 mo): **1.00%** | (4+ mo): **1.50%**
 - Credit expansion multiplier vs seats: **1.30x**
