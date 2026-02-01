@@ -2,7 +2,11 @@ from __future__ import annotations
 
 import shutil
 import subprocess
+import json
 from pathlib import Path
+from datetime import datetime
+
+import yaml
 
 
 def run(cmd: list[str], cwd: Path) -> str:
@@ -29,6 +33,8 @@ def main() -> None:
 
     outputs = root / "outputs"
     docs = root / "docs"
+    inputs_path = root / "inputs" / "assumptions.yaml"
+    cfg = yaml.safe_load(inputs_path.read_text(encoding="utf-8"))
 
     # 2) Recreate docs folder and copy the publishable artifacts
     print("[2/4] Syncing outputs → docs/ (GitHub Pages)…")
@@ -58,6 +64,40 @@ def main() -> None:
         for png in src_dir.glob("*.png"):
             shutil.copy2(png, dst_dir / png.name)
 
+    # Assumptions summary (for the Lovable app)
+    assumptions_summary = {
+        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "horizon": {
+            "start_month": cfg.get("start_month"),
+            "end_month": cfg.get("end_month"),
+        },
+        "currency": cfg.get("currency", "USD"),
+        "starting_state": {
+            "starting_customers": cfg.get("starting_customers"),
+            "starting_arr_usd": cfg.get("starting_arr_usd"),
+        },
+        "growth": {
+            "new_customers_per_month": cfg.get("new_customers_per_month"),
+            "logo_churn_rate_monthly": cfg.get("logo_churn_rate_monthly"),
+            "expansion_rate_monthly": cfg.get("expansion_rate_monthly"),
+        },
+        "monetization": {
+            "seats_per_customer": cfg.get("seats_per_customer"),
+            "price_per_seat_monthly": cfg.get("price_per_seat_monthly"),
+            "credits_per_customer_monthly": cfg.get("credits_per_customer_monthly"),
+            "price_per_1000_credits": cfg.get("price_per_1000_credits"),
+        },
+        "costs": {
+            "cogs_percent_of_revenue": cfg.get("cogs_percent_of_revenue"),
+            "ai_cost_per_1000_credits": cfg.get("ai_cost_per_1000_credits"),
+            "opex_monthly": cfg.get("opex_monthly", {}),
+        },
+        "scenarios": cfg.get("scenarios", {}),
+    }
+    (docs / "assumptions_summary.json").write_text(
+        json.dumps(assumptions_summary, indent=2), encoding="utf-8"
+    )
+
     # Simple landing page for Pages
     index = docs / "index.html"
     index.write_text(
@@ -76,6 +116,11 @@ def main() -> None:
   <body>
     <h1>Clay CFO Automation Model — Static Outputs</h1>
     <p>These files are published for the Lovable dashboard via GitHub Pages.</p>
+
+    <h2>Assumptions</h2>
+    <ul>
+      <li><a href=\"assumptions_summary.json\">assumptions_summary.json</a></li>
+    </ul>
 
     <h2>CSVs</h2>
     <ul>

@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-02-01T00:59:22.780628Z",
+  "horizon": {
+    "start_month": "2026-01",
+    "end_month": "2028-12"
+  },
+  "currency": "USD",
+  "starting_state": {
+    "starting_customers": 600,
+    "starting_arr_usd": 2400000
+  },
+  "growth": {
+    "new_customers_per_month": 45,
+    "logo_churn_rate_monthly": 0.025,
+    "expansion_rate_monthly": 0.012
+  },
+  "monetization": {
+    "seats_per_customer": 4.0,
+    "price_per_seat_monthly": 99,
+    "credits_per_customer_monthly": 2500,
+    "price_per_1000_credits": 12
+  },
+  "costs": {
+    "cogs_percent_of_revenue": 0.22,
+    "ai_cost_per_1000_credits": 1.5,
+    "opex_monthly": {
+      "rnd": 180000,
+      "s_and_m": 220000,
+      "g_and_a": 90000
+    }
+  },
+  "scenarios": {
+    "base": {
+      "new_customers_mult": 1.0,
+      "churn_mult": 1.0,
+      "expansion_mult": 1.0
+    },
+    "upside": {
+      "new_customers_mult": 1.25,
+      "churn_mult": 0.85,
+      "expansion_mult": 1.35
+    },
+    "downside": {
+      "new_customers_mult": 0.75,
+      "churn_mult": 1.25,
+      "expansion_mult": 0.7
+    }
+  }
+}
