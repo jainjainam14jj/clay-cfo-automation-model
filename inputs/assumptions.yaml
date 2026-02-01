@@ -1,0 +1,55 @@
+# Clay-style AI SaaS model (monthly): Seats + Credits
+# Horizon
+start_month: "2026-01"
+end_month: "2028-12"
+
+currency: "USD"
+
+# Starting state
+starting_customers: 600
+starting_arr_usd: 2400000   # used only for memo context; revenue is built bottom-up below
+
+# Segments (simple v1: one blended segment)
+# Growth inputs
+new_customers_per_month: 45
+logo_churn_rate_monthly: 0.025   # 2.5% logo churn / month
+
+# Monetization
+seats_per_customer: 4.0
+price_per_seat_monthly: 99
+
+credits_per_customer_monthly: 2500
+price_per_1000_credits: 12
+
+# Expansion (usage/seat growth on existing customers)
+# Apply to *existing* customers' monetization each month.
+expansion_rate_monthly: 0.012    # ~15.4% annual expansion
+
+# Costs
+cogs_percent_of_revenue: 0.22
+# Optional: variable AI cost per 1,000 credits delivered
+ai_cost_per_1000_credits: 1.50
+
+# Operating expenses (simple v1)
+opex_monthly:
+  rnd: 180000
+  s_and_m: 220000
+  g_and_a: 90000
+
+# Scenarios (multipliers applied to base inputs)
+scenarios:
+  base:
+    new_customers_mult: 1.0
+    churn_mult: 1.0
+    expansion_mult: 1.0
+  upside:
+    new_customers_mult: 1.25
+    churn_mult: 0.85
+    expansion_mult: 1.35
+  downside:
+    new_customers_mult: 0.75
+    churn_mult: 1.25
+    expansion_mult: 0.70
+
+# Which scenario to export as the main pack
+active_scenario: "base"
