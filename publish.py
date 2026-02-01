@@ -78,8 +78,11 @@ def main() -> None:
         },
         "growth": {
             "new_customers_per_month": cfg.get("new_customers_per_month"),
-            "logo_churn_rate_monthly": cfg.get("logo_churn_rate_monthly"),
-            "expansion_rate_monthly": cfg.get("expansion_rate_monthly"),
+            "logo_churn_rate_monthly_0_3": cfg.get("logo_churn_rate_monthly_0_3"),
+            "logo_churn_rate_monthly_4_plus": cfg.get("logo_churn_rate_monthly_4_plus"),
+            "seat_expansion_rate_monthly_0_3": cfg.get("seat_expansion_rate_monthly_0_3"),
+            "seat_expansion_rate_monthly_4_plus": cfg.get("seat_expansion_rate_monthly_4_plus"),
+            "credit_expansion_multiplier": cfg.get("credit_expansion_multiplier"),
         },
         "monetization": {
             "seats_per_customer": cfg.get("seats_per_customer"),
