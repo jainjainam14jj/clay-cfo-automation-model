@@ -6,4 +6,4 @@ outputs/*.csv
 outputs/*.md
 outputs/charts/
 
-# If you want to publish outputs via GitHub Pages, we will override this by committing a /docs folder instead.
+# We publish static assets via /docs for GitHub Pages
