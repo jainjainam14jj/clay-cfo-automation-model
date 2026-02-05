@@ -85,10 +85,10 @@ def main() -> None:
             "credit_expansion_multiplier": cfg.get("credit_expansion_multiplier"),
         },
         "monetization": {
-            "seats_per_customer": cfg.get("seats_per_customer"),
-            "price_per_seat_monthly": cfg.get("price_per_seat_monthly"),
+            "pricing_model": "credits-based (usage) — Clay plans include unlimited users",
             "credits_per_customer_monthly": cfg.get("credits_per_customer_monthly"),
-            "price_per_1000_credits": cfg.get("price_per_1000_credits"),
+            "price_per_credit": cfg.get("price_per_credit"),
+            "implied_price_per_1000_credits": (cfg.get("price_per_credit") or 0) * 1000,
         },
         "costs": {
             "cogs_percent_of_revenue": cfg.get("cogs_percent_of_revenue"),

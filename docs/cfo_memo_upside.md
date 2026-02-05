@@ -4,10 +4,10 @@
 
 ## Executive summary
 - Ending customers: **1,714**
-- Ending MRR: **$983,268** (Ending ARR: **$11,799,215**)
-- Total revenue (period): **$18,139,387**
-- Gross margin (avg): **77.1%**
-- Revenue mix (avg): Seats **92.5%** | Credits **7.5%**
+- Ending MRR: **$188,644** (Ending ARR: **$2,263,734**)
+- Total revenue (period): **$3,380,961**
+- Gross margin (avg): **73.0%**
+- Revenue mix (avg): Seats **0.0%** | Credits **100.0%**
 
 ## Data provenance (important)
 - This dashboard is a **planning model** with numbers **rooted in assumptions** (not Clay’s actual financials).
@@ -18,16 +18,15 @@
 - Logo churn (0–3 mo): **4.00%** | (4+ mo): **2.00%**
 - Seat expansion (0–3 mo): **1.00%** | (4+ mo): **1.50%**
 - Credit expansion multiplier vs seats: **1.30x**
-- Blended NRR (monthly avg): **96.67%** | Blended GRR (monthly avg): **82.35%**
-- Seats/customer: **4.00** @ **$99/seat/mo**
-- Credits/customer/mo: **2,500** @ **$12.00 per 1k**
+- Blended NRR (monthly avg): **97.12%** | Blended GRR (monthly avg): **79.18%**
+- Credits/customer/mo: **2,500** @ **$0.0300 per credit** (implied **$30.00 per 1k credits**)
 
 ## Latest-month drivers (MRR bridge)
-- Starting existing MRR: **$955,530**
-- Churned MRR (lost): **-$253,563**
-- Expansion MRR (gained): **+$252,662**
-- New MRR from new customers: **+$28,638**
-- Ending MRR: **$983,268**
+- Starting existing MRR: **$182,860**
+- Churned MRR (lost): **-$59,274**
+- Expansion MRR (gained): **+$60,000**
+- New MRR from new customers: **+$5,059**
+- Ending MRR: **$188,644**
 
 ## Notes
 - This is a simplified, CFO-ready planning model intended for fast scenario iteration.
