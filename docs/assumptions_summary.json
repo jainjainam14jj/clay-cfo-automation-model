@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T22:51:29.296082Z",
+  "generated_at": "2026-02-05T23:15:51.672238Z",
   "horizon": {
     "start_month": "2026-01",
     "end_month": "2028-12"
@@ -26,6 +26,7 @@
   "costs": {
     "cogs_percent_of_revenue": 0.22,
     "ai_cost_per_1000_credits": 1.5,
+    "ai_cost_improvement_rate_monthly": 0.005,
     "opex_monthly": {
       "rnd": 180000,
       "s_and_m": 220000,

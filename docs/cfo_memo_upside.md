@@ -6,7 +6,7 @@
 - Ending customers: **1,714**
 - Ending MRR: **$188,644** (Ending ARR: **$2,263,734**)
 - Total revenue (period): **$3,380,961**
-- Gross margin (avg): **73.0%**
+- Gross margin (avg): **73.4%**
 - Revenue mix (avg): Seats **0.0%** | Credits **100.0%**
 
 ## Data provenance (important)

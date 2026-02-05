@@ -93,6 +93,7 @@ def main() -> None:
         "costs": {
             "cogs_percent_of_revenue": cfg.get("cogs_percent_of_revenue"),
             "ai_cost_per_1000_credits": cfg.get("ai_cost_per_1000_credits"),
+            "ai_cost_improvement_rate_monthly": cfg.get("ai_cost_improvement_rate_monthly"),
             "opex_monthly": cfg.get("opex_monthly", {}),
         },
         "scenarios": cfg.get("scenarios", {}),
