@@ -7,11 +7,11 @@
 - Ending MRR: **$131,736** (Ending ARR: **$1,580,833**)
 - Total revenue (period): **$2,460,134**
 - Gross margin (avg): **73.4%**
-- Revenue mix (avg): Seats **0.0%** | Credits **100.0%**
+- Revenue mix (avg): Credits **100.0%**
 
 ## Data provenance (important)
 - This dashboard is a **planning model** with numbers **rooted in assumptions** (not Clay’s actual financials).
-- The goal is to demonstrate how to structure key drivers for a seats + credits AI SaaS business and generate CFO-ready insights.
+- The goal is to demonstrate how to structure key drivers for a credits-based (usage) AI SaaS business and generate CFO-ready insights.
 
 ## Key drivers (assumptions)
 - New customers / month: **55.0**
